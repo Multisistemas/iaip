@@ -1,0 +1,183 @@
+*{
+    border: 0;
+    font-family: [[setting:fontFamily]], sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body{
+    background-color: #FFFFFF;
+    /*overflow-x:hidden !important;*/
+}
+
+html{
+    /*overflow-x:hidden !important;   */
+}
+
+[[setting:bgstyle]]
+
+.no-marginleft{
+    margin-left: 0 !important;
+}
+.no-marginright{
+    margin-right: 0 !important;
+}
+.activityinstance a{
+color:#3056A5!important;
+
+}
+.float-right{
+    float: right !important;
+}
+.slideshow ul{
+list-style-image: url(http://aktivamedia.com/iaip/theme/genesis/pix/bullet_iaip.gif);
+}
+.slideshow{
+    height: 900px!important;
+}
+.slideshow span{
+    font-size: 15px!important;
+}
+/* Social Icons */
+ul.social-icons{
+    margin: 0;
+    list-style-type: none;
+}
+ul.social-icons>li{
+    cursor: pointer;
+    float: left;
+    height: 25px;
+    width: 25px;
+}
+
+/* Default Itens */
+#defaultlogo{
+    background: url([[pix:theme|defaultlogo]]) no-repeat center;
+    height: 70px;
+    width: 200px;
+}
+#logo img{
+    height: [[setting:logoHeight]];
+    width: auto;
+}
+#defaultlogowhite{
+    background: url([[pix:theme|defaultlogowhite]]) no-repeat center;
+    height: 70px;
+    width: 200px;
+}
+#logowhite{
+    background: url([[setting:footermod_aboutus_whitelogo]]) no-repeat center;
+    height: 88px;
+    width: 375px;
+}
+.shadow1{
+    background: url([[pix:theme|shadow1]]) no-repeat center;
+    height: 20px;
+    /*position: absolute;*/
+    width: 100%;
+    z-index: 1;
+}
+.shadow2{
+    background: url([[pix:theme|shadow2]]) no-repeat center;
+    height: 13px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.leftsidebar, .rightsidebar{
+    height: auto;
+    min-height: 300px;
+    width: 100%;
+}
+
+/*Moodle Base Override*/
+#page #outercontainer{
+    background: none !important;
+    background-position: 0 0 !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+    width: 100% !important;
+}
+#page-content{
+    clear: none !important;
+    float: none !important;
+   /* overflow: auto !important;*/
+    width: 100% !important;
+}
+#page-content #region-main-box,#page-content #region-main-box #region-post-box{
+    float: none !important;
+    right: 0 !important;
+    width: 100% !important;
+}
+#page-content #region-main-box #region-post-box #region-main{
+    float: none !important;
+    left: 0 !important;
+    width: 100% !important;
+}
+#page-content #region-main-box #region-post-box #region-main #region-content{
+    padding: 0 0 10px 20px !important;
+}
+
+#section-0,#section-2,#section-4,#section-6,#section-8,#section-10,#section-12,#section-14,#section-16,#section-18,#section-20,#section-22,#section-24,#section-26,#section-28,#section-30,
+#section-31,#section-32,#section-33,#section-34,#section-35,#section-36,#section-37,#section-38,#section-39,#section-40,#section-41,#section-42,#section-43,#section-44,#section-45,
+#section-46,#section-47,#section-48,#section-49,#section-50,#section-51,#section-52,#section-53,#section-54,#section-55,#section-56,#section-57,#section-58,#section-59,#section-60{
+    background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+
+}
+.section{
+    color: #444444 !important;
+    margin: 0 !important;
+    padding: 15px 0 5px 0 !important;
+}
+.quizinfo, #intro div,h2.main{
+    text-align: center;
+}
+h2.main{
+    margin-top: 25px;
+}
+.header{
+    margin-bottom: 0 !important;
+    border-bottom: none!important;
+    box-shadow: none!important;
+}
+.accesshide{
+    display: none;
+}
+
+#dialogo1, #dialogo2, #dialogo3, #dialogo4, #dialogo5, #dialogo6, #dialogo7, #dialogo8, #dialogo9 {
+    background: #1593D2;
+border-radius: 50%;
+padding: 5px;
+ cursor: pointer;
+}
+.region-content h2{
+    padding: 10px 5px 10px 10px;
+margin: 0px;
+font-size: 20px;
+color: #FFFFFF;
+background: #1593D2!important;
+}
+.region-content h3{
+background: none;
+padding: 5px 5px 7px 5px;
+margin: 10px 10px 10px 0px;
+font-size: 16px;
+color: #1593D2;
+border-bottom: 3px solid #1593D2;
+
+}
+
+
+.box p{
+    font-size: 15px; 
+padding: 10px;
+text-align: justify;
+}
