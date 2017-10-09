@@ -177,7 +177,7 @@ $THEME->csspostprocess = 'genesis_process_css';
 // delivered.
 ////////////////////////////////////////////////////
 
-$THEME->javascripts = array('modernizr.custom.captionhover','modernizr.custom');
+$THEME->javascripts = array('jquery211min','modernizr.custom.captionhover','modernizr.custom');
 
 ////////////////////////////////////////////////////
 // An array containing the names of JavaScript files
@@ -185,7 +185,7 @@ $THEME->javascripts = array('modernizr.custom.captionhover','modernizr.custom');
 // (gets included in the head)
 ////////////////////////////////////////////////////
 
-$THEME->javascripts_footer = array('jquery211min','jqueryeasing13');
+$THEME->javascripts_footer = array('jqueryeasing13');
 
 if($sliderPlugin == 'content'){
     $THEME->javascripts_footer[] = 'jquery.cslider';
