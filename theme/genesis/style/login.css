@@ -96,6 +96,12 @@
 .loginbox form div.remember label{
     float: left;
 }
+.loginbox form div.register label p{
+    color: #FFFFFF;
+    float: left;
+    font-size: 13px;
+    font-weight: 100;
+}
 .otherLoginMethod{
     margin-top: 25px;
     text-align: center;

@@ -49,8 +49,9 @@
                 <br>
             </div>
         </div>
+        <div class="row">
         <div class="sklt-container" id="loginContainer">
-            <div class="sixteen columns">
+            <div class="eight columns">
                 <div class="loginbox">
                     <form method="post"  action="<?php echo $CFG->wwwroot; ?>/login/index.php">
                         <div class="leftarea">
@@ -82,12 +83,28 @@
                     <?php } ?>
                 </div>
                 <br>
-                <div class="shadow2"></div>
                 <?php echo $OUTPUT->otherLoginMethods($CFG); ?>
                 <br><br>
             </div>
+            <div class="eight columns">
+                <div class="loginbox">
+                    <form method="post"  action="<?php echo $CFG->wwwroot; ?>/login/signup.php">
+                        <div class="leftarea">
+                            <p><?php echo get_string('register','theme_genesis');?></p>
+                            <div class="clear"></div>
+                            <div class="register" style="max-width: 300px;">
+                                <label><?php echo $CFG->auth_instructions;?></label>
+                            </div>
+                        </div>
+                        <input type="submit" value=">"/>
+                    </form>
+                </div>
+            </div>
+
+            
         </div>
     </div>
+        </div> <!-- row -->
     <?php include 'footer.php'; ?>
 </body>
 <?php 

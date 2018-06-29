@@ -367,6 +367,7 @@ div#jcontrols_button span.arrow.sep {
     font-size: 12px;
     font-weight: 200;
     padding: 10px 15px 15px;
+    display: grid;
 }
 
 /** some specific block styles for calendar block, login block, my profile block, etc. **/
