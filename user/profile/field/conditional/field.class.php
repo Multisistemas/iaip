@@ -29,6 +29,9 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once(__DIR__ . '/../menu/field.class.php');
 
+global $PAGE;
+$PAGE->requires->js_call_amd('profilefield_conditional/conditions', 'initial');
+
 /**
  * Class profile_field_conditional
  *
@@ -71,6 +74,8 @@ class profile_field_conditional extends profile_field_menu {
             }
             $this->requiredset[$condition->option] = !empty($condition->requiredfields) ? $condition->requiredfields : array();
         }
+
+        
     }
 
     /**
@@ -102,8 +107,7 @@ class profile_field_conditional extends profile_field_menu {
         }
 
         // MDL-57085: The following line would be moved into edit_after_data if edit_after_data were being called for signup form.
-        $PAGE->requires->js_call_amd('profilefield_conditional/conditions', 'apply',
-                array($this->field->shortname, $this->field->param5, $this->field->param4, $mform->getReqHTML()));
+        
 
         // MDL-57085: The following lines were not required if edit_after_data were being called for signup form.
         MoodleQuickForm::registerRule('required', null, 'profilefield_conditional\rule_required');
@@ -139,7 +143,7 @@ class profile_field_conditional extends profile_field_menu {
                         $value = $usernew->{'profile_field_' . $requiredfield};
                     }
                 } else {
-                    $value = '';
+                    $value = "felipe";
                 }
 
                 if (($value !== '0') && empty($value)) {
